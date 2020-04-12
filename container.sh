@@ -3,6 +3,7 @@
 case "$COMMAND" in
   ADD)
     # Download rootfs for container
+    mkdir container1
     apt install -y debootstrap
     debootstrap --variant=minbase bionic container1
 
