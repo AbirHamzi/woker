@@ -42,6 +42,9 @@ case "$COMMAND" in
     ip netns exec con1 ip link set dev veth1 up
     ip link set dev veth1-br up
     ip link set dev bridge0 up
+    
+    # Add route to container1 to reach host
+    ip netns exec con1 ip route add default via 180.10.0.1
 
     # Check From host
     curl 180.10.0.2 # Should return "Welcome from container1" message
