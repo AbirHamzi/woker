@@ -13,6 +13,6 @@ Execute nodejs app
         npm install
         pm2 start app.js --name jscommunity
         
-Follow instructions in container.sh to create a container linked to host via a Linux Bridge Network
+Follow instructions in [container.sh](container.sh) to create a container linked to host via a Linux Bridge Network
 
 
